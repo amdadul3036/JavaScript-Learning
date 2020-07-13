@@ -16,3 +16,4 @@ console.log(student1.name);
 //Changing an element
 
 student1.name= "Dhruboish";
+console.log(student1);
