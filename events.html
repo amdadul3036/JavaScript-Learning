@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="handleClick()">Exploring Events</h1>
+    <button>Click Me 1</button>
+    <button id='second'>Click Me 2</button>
+    <button>Click Me 3</button>
+    <button>Click Me 4</button>
+    <script>
+        function handleClick(){
+            document.body.style.backgroundColor='cyan';
+        }
+        const secondBtn = document.getElementById('second');
+        secondBtn.onclick=handleClick;
+    </script>
+</body>
+</html>
