@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM4</title>
+    <style>
+      body {
+        background: papayawhip;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 onclick="this.innerHTML='Careal!'">What is your favourite food?</h1>
+<h1 onclick="changeColor(this)">Click to change the color!</h1>
+<button id="myBtn" >Clicke Meeeeeeeeeee!!!</button>
+    <script>
+        function changeColor(obj){
+            obj.style.color="green";
+        }
+
+    document.getElementById("myBtn").onclick= changeBackgroundColorToMediumOrchid;
+
+    function changeBackgroundColorToMediumOrchid(){
+        document.querySelector('body').style.background="MediumOrchid";
+    }
+    </script>
+  </body>
+</html>

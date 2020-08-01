@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="alert('Hello')">Click Me</button>
+    <button onclick="prompt('hi')">Click Me 2</button>
+    <button onclick="myMessage()">Click Me 3</button>
+    <p onclick="alert('This is paragaraph')">Dhruboish is xoss</p>
+
+
+    <!-- Showing in paragraph-->
+    <button id="message1" onclick="myMessage1()">Do not click me</button>
+
+
+    <!--images-->
+
+    <button onclick="Dhruboish()" >Dhruboish</button>
+    <button onclick="TwinkleMindfulness()" id="twinkle">Twinkle Mindfulness</button><br><br>
+    <img src="images/MD AMDADUL ISLAM.png" alt="Dhruboish" id="dhrubo" height="300px" width="300px">
+    
+
+
+    <script>
+      function myMessage() {
+        alert("Hello Everyone");
+      }
+
+      function myMessage1(){
+          var myVar= document.querySelector("#message1");
+          myVar.innerHTML="Uhu!! don't click me please";
+      }
+
+
+      var myVar = document.querySelector("#dhrubo");
+      function Dhruboish(){
+          
+          myVar.src = "images/MD AMDADUL ISLAM.png";
+      }
+
+      function TwinkleMindfulness(){
+          
+          myVar.src = "images/Twinkle Mindfulness Logo.png";
+      }
+    </script>
+  </body>
+</html>

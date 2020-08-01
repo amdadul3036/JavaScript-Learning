@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing CSS style by JavaScript</title>
+    <style>
+        p{
+            color: red;
+            font-size: 3rem;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraph</p>
+    <button onclick="addStyle()">add style</button>
+    <button onclick="removeStyle()">remove style</button>\
+
+    <script>
+        function addStyle(){
+            var myVar=document.querySelector("p");
+            myVar.style.color= "green";
+        }
+        function removeStyle(){
+            document.querySelector("p").style.color="red";
+        }
+    </script>
+</body>
+</html>

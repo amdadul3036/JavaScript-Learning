@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Event Listener in Multiple Element</title>
+</head>
+<body>
+    <h1>No one clicked</h1>
+    <button class="btn">Click 1</button>
+    <button class="btn">Click 2</button>
+    <button class="btn">Click 3</button>
+
+<!--setAttribute-->
+
+ <article>
+     <p>I am a paragraph</p>
+ </article>
+    <script>
+        for(i=0;i<=2;i++){
+            var myVar = document.querySelectorAll(".btn")[i].addEventListener("click", function(){
+            var text = this. innerHTML;
+            document.querySelector("h1").innerHTML= text + " is selected";
+        })
+        }
+
+        document.querySelector("article").setAttribute('title','all the best bro');
+    </script>
+</body>
+</html>
