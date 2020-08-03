@@ -1,7 +1,13 @@
-function myNumbers(num1,num2){
-    console.log(arguments);
-    console.log(arguments[4]);
-    return num1+num2;
+//Practicing Arguments
+
+function practicingArgument(num1,num2){ //num1,num2 na dileo kaj korbe because of argument
+    var sum=0;
+    for (let i = 0; i < arguments.length; i++) {
+        const num = arguments[i];
+        sum= num+sum;
     }
-var result=myNumbers(5,7,0,4,2,6);
-console.log(result);
+    return sum;
+}
+console.log(practicingArgument(10,20,1,2,3,5,6));
+
+

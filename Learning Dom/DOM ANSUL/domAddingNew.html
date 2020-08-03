@@ -7,9 +7,9 @@
 </head>
 <body>
     <article id="testing"><h1> Ajke eid er rat mu ha ha ha</h1></article>
-    <article id="khabar">
+    <article >
         <h1>Kalke ja ja khabo</h1>
-        <ul>
+        <ul id="khabar">
             <li>khabar - 1</li>
             <li>khabar - 2</li>
             <li>khabar - 3</li>
@@ -30,11 +30,11 @@
         newArticle.innerHTML=" aba cada vallage na rog";
         article.appendChild(newArticle);
 
-
-        const khabar= document.getElementById("khabar");
-        const newKhabar = document.createElement('li');
-        newKhabar.innerHTML="Rosun pora";
-        article.appendChild(newKhabar);
+     //Adding 1 more khabar
+        const ul= document.getElementById("khabar");
+        const li = document.createElement('li');
+        li.innerHTML="Rosun pora";
+        ul.appendChild(li);
     </script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exploring Events</h1>
+    <!-- First Method Start -->
+    <button onclick="btn1()">Click me - 1</button>
+    <!-- First Method End ; Here I call a function in onclick event-->
+    <button>Click me - 2</button>
+    <button id="btn3">Click me - 3</button>
+    <button id="btn4">Click me - 4</button>
+    <button id="btn5">Click me - 5</button>
+
+    <script>
+        //Second Method Start
+        function btn1(){
+            console.log("First one clicked");
+        }
+        //Second Method End
+        //Third Method Start
+        function btn3(){
+            console.log("Third one clicked");
+        }
+        var button3 = document.getElementById('btn3');
+        button3.onclick = btn3; //btn3() lekha jabe na; cause btn3() mane direct call kora. ar btn3 mane button 3 click korle eti call hobe;
+        //Third Method End
+
+        //Forth Method Start; AddEventListener Method
+        function btn4(){
+            document.body.style.backgroundColor = "black";
+        }
+        var button4 = document.getElementById('btn4');
+        button4.addEventListener('click', btn4);
+        //Forth Method End
+
+
+        //Fifth Method Start using annoynomous function;
+        document.getElementById('btn5').addEventListener('click',function(){
+            document.body.style.color = 'cyan';
+        })
+    </script>
+</body>
+</html>
