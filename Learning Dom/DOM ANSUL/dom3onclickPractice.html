@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <button onclick="message()">Click me for text</button>
+    <p id="para1"></p>
+    <button onclick="dhruboPic()">Click me to get Dhruboish</button>
+    <img src="" alt="" height="200px" width="200px" id="dhPic">
+    <button onclick="twinkPic()">Click Me to get Twinkle Mindfulness</button>
+    <img src="" alt="" height="200px" width="200px" id="twinPIc">
+
+    <script>
+     function message(){
+        var myMessage1 = document.getElementById("para1");
+        myMessage1.innerHTML = "Ore vai aste chap";
+     }
+
+     function dhruboPic(){
+           var myMessage2 = document.getElementById("dhPic");
+           myMessage2.src = "images/MD AMDADUL ISLAM.png"
+     }
+     function twinkPic(){
+         var myMessage3 = document.getElementById("twinPIc");
+         myMessage3.src = "images/Twinkle Mindfulness Logo.png"
+     }
+    </script>
+</body>
+</html>

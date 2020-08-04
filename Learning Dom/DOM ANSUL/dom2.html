@@ -10,15 +10,23 @@
     <p id="para">I am paragraph</p>
     <h1 id="heading2">This is Dhruboish</h1>
 
-    <button>Moja lagteche</button>
-    <button>Yammiiiiiiiiiyyyyyyyy</button><br />
+    <button onclick="myMessage()">Moja lagteche</button>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <button onclick="myMessage1()">Yammiiiiiiiiiyyyyyyyy</button><br />
+    
 
     <strike class="klas1">Oka bai</strike><br />
     <b class="klas2">Hello brathar how are you</b>
 
 
     <script>
-        document.querySelector("button").innerHTML="query selector sikhtechi hehehe heheheh";
+       function myMessage(){
+        document.querySelector("#para1").innerHTML="query selector sikhtechi hehehe heheheh";
+       }
+       function myMessage1(){
+        document.querySelector("#para2").innerHTML="Kub tes";
+       }
     </script>
 </body>
 </html>
