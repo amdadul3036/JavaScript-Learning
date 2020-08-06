@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: #cfaacd;
+            height: 80px;
+            width: 150px;
+            border-radius: 10px;
+            font-size: 30px;
+            padding: 10px;
+            box-shadow: rgb(209, 23, 54);
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="prev()">Previous</button>
+    <img src="images/MD AMDADUL ISLAM.png" alt="MD AMDADUL ISLAM" height="300px" width="300px">
+    <button onclick="next()">Next</button>
+
+
+    <script>
+        
+        var arrayPic = ["images/MD AMDADUL ISLAM.png",
+        "images/Twinkle Mindfulness Logo.png","images/Novels of the Heart.png"];
+
+        var imgTag = document.querySelector("img");
+        var count = 0;
+        function next(){
+            count++;
+        if(count >= arrayPic.length){
+            count = 0;
+            imgTag.src = arrayPic[count];
+        }else{
+            imgTag.src = arrayPic[count];
+        }
+        }
+
+        function prev(){
+            count--;
+            if(count<0){
+                count = arrayPic.length-1;
+                imgTag.src = arrayPic[count];
+            }else{
+                imgTag.src = arrayPic[count];
+            }
+        }
+    </script>
+</body>
+</html>

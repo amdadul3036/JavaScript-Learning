@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #01fca5;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="prev()">Previous</button>
+    <img src="images/MD AMDADUL ISLAM.png" alt="MD AMDADUL ISLAM" height="300px" width="300px">
+    <button onclick="next()">Next</button>
+
+
+    <script>
+        var myPicArr = ["images/MD AMDADUL ISLAM.png","images/Twinkle Mindfulness Logo.png","images/Novels of the Heart.png"];
+        var imgTag = document.querySelector("img");
+        count = 0;
+        function next(){
+            count++;
+            if(count >= myPicArr.length){
+                count = 0;
+                imgTag.src = myPicArr[count];
+            }else{
+                imgTag.src = myPicArr[count];
+            }
+        }
+
+        function prev(){
+            count -- ;
+            if(count < 0){
+                count = myPicArr.length - 1;
+                imgTag.src = myPicArr[count];
+            }else{
+                imgTag.src = myPicArr[count];
+            }
+        }
+    </script>
+</body>
+</html>
