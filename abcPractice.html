@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    #template{
+        background-color: lightsalmon;
+        border-radius: 10px;
+        margin:10px;
+        padding: 20px;
+        box-shadow: 5px 5px 10px gray;
+    }
+</style>
 <body>
     <ul id="email-list">
        
@@ -20,7 +29,7 @@
     function collectEmail(data){
         let lists = ' ';
         data.forEach(user => {
-            lists =  lists + `<li> ${user.email}   </li>`;
+            lists =  lists + `<li id = "template"> ${user.name}    : <h1>${user.email}</h1></li>`;
             
         });
         const ul = document.getElementById("email-list");
