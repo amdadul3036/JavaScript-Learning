@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="email-list">
+       
+    </ul>
+</body>
+
+<script>
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(data => collectEmail(data))
+
+
+    function collectEmail(data){
+        let lists = ' ';
+        data.forEach(user => {
+            lists =  lists + `<li> ${user.email}   </li>`;
+            
+        });
+        const ul = document.getElementById("email-list");
+        ul.innerHTML = lists;
+    }
+    
+</script>
+</html>
