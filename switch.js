@@ -1,4 +1,4 @@
-var amount = 500000;
+var amount = 10000000;
 switch(amount){
     case 10000:
     case 50000:
