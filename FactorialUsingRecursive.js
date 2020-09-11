@@ -7,5 +7,5 @@ function fact(n){
     }
 }
 
-var result=fact(10);
+var result=fact(3);
     console.log(result);
