@@ -17,23 +17,23 @@
 </head>
 <body>
         <div>
-            <h1 class="heading">lekhok-1</h1>
+            <h1 class="div">lekhok-1</h1>
             <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eius repudiandae quam ratione necessitatibus a alias minus dicta laborum quisquam ipsa quas maxime deleniti sapiente, harum recusandae tempore facere expedita?</p>
         </div>
         <div>
-            <h1 class="heading">lekhok-2</h1>
+            <h1 class="div">lekhok-2</h1>
             <p class="paragraph">Earum est ab incidunt perspiciatis placeat doloremque voluptatum dignissimos porro repellendus in nam deserunt optio architecto maiores, quis, dolore distinctio iusto nisi consequatur harum facere omnis? Quaerat nam officiis harum.</p>
         </div>
         <div>
-            <h1 class="heading">lekhok-3</h1>
+            <h1 class="div">lekhok-3</h1>
             <p class="paragraph">Esse ipsa atque velit reprehenderit autem doloribus quae enim possimus, eum culpa vel saepe similique dolore minima excepturi dolor nobis iusto aliquid necessitatibus officiis magnam quam. Deleniti id praesentium deserunt.</p>
         </div>
         <div>
-            <h1 class="heading">lekhok-4</h1>
+            <h1 class="div">lekhok-4</h1>
             <p class="paragraph">Voluptatem, alias natus odio esse praesentium dolorem dolor fugit, earum aperiam modi qui, rerum repellat incidunt odit facere voluptatibus illo eius itaque nemo animi magni id veniam expedita corporis. Aliquid.</p>
         </div>
         <div>
-            <h1 class="heading">lekhok-5</h1>
+            <h1 class="div">lekhok-5</h1>
             <p class="paragraph">Non porro quasi blanditiis laudantium numquam rerum hic sint accusamus ut et error ipsum, sequi, velit quaerat aspernatur? Fugit, est alias? Earum numquam eum maiores in dicta quidem, dolores obcaecati.</p>
         </div>
     
@@ -41,9 +41,9 @@
 
 
         <script>
-            var heading = document.getElementsByClassName('heading');
-            for (let i = 0; i < heading.length; i++) {
-                const element = heading[i];
+            var div = document.getElementsByClassName('div');
+            for (let i = 0; i < div.length; i++) {
+                const element = div[i];
                 element.style.color= "red";
                 element.style.margin= "50px";
             }
@@ -51,9 +51,17 @@
             var paragraph = document.getElementsByClassName('paragraph');
             for (let i = 0; i < paragraph.length; i++) {
                 const element = paragraph[i];
-                element.innerHTML = "Dhrubo pagla"
+                element.innerHTML = " Dhrubo dh dh dh dh dh dh dh dh dh hd ";
             }
             
+
+            var div = document.getElementsByTagName('div');
+            for (let i = 0; i < div.length; i++) {
+                const element = div[i];
+                var newAdded = document.createElement('p');
+                newAdded.innerHTML = "This is Create Element";
+                div.appendChild(newAdded);
+            }
         </script>
 </body>
 </html>
