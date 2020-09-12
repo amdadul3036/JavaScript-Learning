@@ -51,7 +51,7 @@
             var paragraph = document.getElementsByClassName('paragraph');
             for (let i = 0; i < paragraph.length; i++) {
                 const element = paragraph[i];
-                element.innerHTML = " Dhrubo dh dh dh dh dh dh dh dh dh hd ";
+                element.innerHTML = " lorem30";
             }
             
 
@@ -62,6 +62,11 @@
                 newAdded.innerHTML = "This is Create Element";
                 element.appendChild(newAdded);
             }
+
+            const body = document.getElementsByTagName('div');
+            const newDiv = document.createElement('div');
+            newAdded.innerHTML = "Hello chandu";
+            body.appendChild('div');
         </script>
 </body>
 </html>
