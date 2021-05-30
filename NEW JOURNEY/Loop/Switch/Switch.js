@@ -13,6 +13,10 @@ switch (grade){
             document.write("Grade is C");
             break;
 
+    case "D":
+            document.write("Grade is D");
+            break;     
+
     default:
             document.write("FAIL");
             break;
