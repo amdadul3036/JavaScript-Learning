@@ -25,3 +25,5 @@ arr.splice(2,3);
 document.write(arr + "<br>");
 
 // ---------------------Step 7 : Remove any element from an array -----------------------------
+
+STEP 7 IS TOMMORROW
