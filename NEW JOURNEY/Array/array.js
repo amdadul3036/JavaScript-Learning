@@ -12,12 +12,12 @@ console.log(arr[2]);
 // ---------------------Step 4 : Adding a new element with an array -----------------------------
 
 arr.push("Sogir Uddin");
-document.write(arr + "<br>");
+document.write(arr + "<br>");   //Push will add the element at the last of the array
 
 // ---------------------Step 5 : Remove the last element from an array -----------------------------
 
 arr.pop();
-document.write(arr + "<br>");
+document.write(arr + "<br>");  //Pop will remove only the last element of the array
 
 // ---------------------Step 6 : Remove any element from an array -----------------------------
 
@@ -32,5 +32,8 @@ document.write(arr.length + "<br>");   //It will give the total number of item i
 
 var institution = ["IKG","SCA","NDC","DU"];
 document.write(arr.concat(institution));    //In this method the array you want to keep first will be in first then ".concat" and then the second array.
+
+
+// ---------------------Step 9 : Reverse Method -----------------------------
 
 
