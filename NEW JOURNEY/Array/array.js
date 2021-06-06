@@ -24,6 +24,5 @@ document.write(arr + "<br>");
 arr.splice(2,3);
 document.write(arr + "<br>");
 
-// ---------------------Step 7 : Remove any element from an array -----------------------------
+// ---------------------Step 7 : Sorting Array -----------------------------
 
-STEP 7 IS TOMMORROW
