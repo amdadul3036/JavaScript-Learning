@@ -44,6 +44,7 @@ document.write(arr.concat(institution) + '</br>');    //In this method the array
 // ---------------------Step 11 : Reverse Method -----------------------------
 
 document.write("Reverse Method: " + institution.reverse() + '</br>');
+
 // ---------------------Step 12 : Accessing all elements of array -----------------------------
 
 for (let i = 0; i <  institution.length; i++) {
@@ -51,5 +52,10 @@ for (let i = 0; i <  institution.length; i++) {
     document.write("Elements of index number " + i + " is " + element + '</br>');
 }
 
+// ---------------------Step 13 : Slice Method-----------------------------
+var slicingarray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
+var a = slicingarray.slice(1,5);
+document.write(a);
+// SO SLICE METHOD WILL START COUNT ACCORDING TO INDEX NUMBER AND THEN PRINT THROUGH THE FIRST INDEX TO THE SOECOND OF LAST ELEMENT 
 
 
