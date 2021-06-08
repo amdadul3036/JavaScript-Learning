@@ -58,4 +58,5 @@ var a = slicingarray.slice(1,5);
 document.write(a);
 // SO SLICE METHOD WILL START COUNT ACCORDING TO INDEX NUMBER AND THEN PRINT THROUGH THE FIRST INDEX TO THE SOECOND OF LAST ELEMENT 
 
+// ---------------------Step 14 : Sort Method-----------------------------
 
