@@ -31,9 +31,17 @@ document.write(arr.length + "<br>");   //It will give the total number of item i
 // ---------------------Step 8 : Join 2 Array in 1 Array -----------------------------
 
 var institution = ["IKG","SCA","NDC","DU"];
-document.write(arr.concat(institution));    //In this method the array you want to keep first will be in first then ".concat" and then the second array.
+document.write(arr.concat(institution) + '</br>');    //In this method the array you want to keep first will be in first then ".concat" and then the second array.
 
 
 // ---------------------Step 9 : Reverse Method -----------------------------
+
+// ---------------------Step 9 : Accessing all elements of array -----------------------------
+
+for (let i = 0; i <  institution.length; i++) {
+    const element =  institution[i];
+    document.write("Elements of index number " + i + " is " + element + '</br>');
+}
+
 
 
