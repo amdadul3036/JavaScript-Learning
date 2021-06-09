@@ -59,9 +59,10 @@ document.write(a + '</br>');
 // SO SLICE METHOD WILL START COUNT ACCORDING TO INDEX NUMBER AND THEN PRINT THROUGH THE FIRST INDEX TO THE SOECOND OF LAST ELEMENT 
 
 // ---------------------Step 14 : Sort Method-----------------------------
-document.write(institution.sort());
+document.write(institution.sort()+ '</br>');
 
 // ---------------------Step 15 : toString Method-----------------------------
-console.log(institution.toString()); 
+console.log(institution.toString() ); 
 
-
+// ---------------------Step 16 : Join Method-----------------------------
+document.write(institution.join(' ' + 'Joinning' + ' '));
