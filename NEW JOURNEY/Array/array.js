@@ -59,7 +59,9 @@ document.write(a + '</br>');
 // SO SLICE METHOD WILL START COUNT ACCORDING TO INDEX NUMBER AND THEN PRINT THROUGH THE FIRST INDEX TO THE SOECOND OF LAST ELEMENT 
 
 // ---------------------Step 14 : Sort Method-----------------------------
-var slicingarray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
-document.write(slicingarray.sort());
+document.write(institution.sort());
+
+// ---------------------Step 15 : toString Method-----------------------------
+console.log(institution.toString()); 
 
 
