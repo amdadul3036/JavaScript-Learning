@@ -8,4 +8,4 @@ document.write("Second Array: " + copyOrClonefriendsNameArray + '</br>');
 
 document.write(friendsNameArray == copyOrClonefriendsNameArray + '</br>' );  //False
 
-//As it is false so it's clear that they are not equal. They are just copy of each other but not equal.
+//As it is false so it's clear that they are not equal. They are just copy of each other but not equal. .
